@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* {
+  font-family: Exo, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  background-color: url(https://as01.epimg.net/meristation_en/imagenes/2023/01/17/news/1673917754_426502_1673917803_noticia_normal_recorte1.jpg);
+  color: darkgreen;
+  text-shadow: #ffffff;
+}
+
+.green {
+  color: #1E824C;
+}
+
+.grid-wrapper {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.display {
+  margin-bottom: 30px;
+}
+
+.choice {
+  background-color: #ABB7B7;
+  position: absolute;
+  z-index: 2;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  line-height: 100px;
+  border: 3px solid #1E824C;
+  box-shadow: 0px 0px 100px;
+}
+
+.ex, .oh {
+  cursor: pointer;
+  font-size: 60px;
+  padding: 20px
+}
+
+.board {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+
+.tic {
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.one {
+  border-right: 3px solid #1E824C;
+  border-bottom: 3px solid #1E824C;
+}
+
+.two {
+  border-left: 3px solid #1E824C;
+  border-right: 3px solid #1E824C;
+  border-bottom: 3px solid #1E824C;
+}
+
+.three {
+  border-bottom: 3px solid #1E824C;
+  border-left: 3px solid #1E824C;
+}
+
+.four {
+  border-bottom: 3px solid #1E824C;
+  border-right: 3px solid #1E824C;
+  border-top: 3px solid #1E824C;
+}
+
+.five {
+  border: 3px solid #1E824C;
+}
+
+.six {
+  border-left: 3px solid #1E824C;
+  border-top: 3px solid #1E824C;
+  border-bottom: 3px solid #1E824C;
+}
+
+.seven {
+  border-right: 3px solid #1E824C;
+  border-top: 3px solid #1E824C;
+}
+
+.eight {
+  border-right: 3px solid #1E824C;
+  border-top: 3px solid #1E824C;
+  border-left: 3px solid #1E824C;
+}
+
+.nine {
+  border-top: 3px solid #1E824C;
+  border-left: 3px solid #1E824C;
+}
+
+.selection {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.xoro {
+  margin-right: 100px;
+  cursor: default;
+}
+
+.reset {
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #3A539B;
+}
